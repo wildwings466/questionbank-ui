@@ -1,0 +1,24 @@
+<div class="exam-list-container">
+    <h2>Exams for Course ID: {{ courseId }}</h2>
+    <div class="card-container">
+      <div class="card" *ngFor="let exam of exams">
+        <h3>{{ exam.name }}</h3>
+        <!-- Add more exam details as necessary -->
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="activeExam">
+    <h2>{{ activeExam.name }} - Syllabus</h2>
+    <p><strong>Syllabus:</strong></p>
+    <ul>
+      <li *ngFor="let topic of activeExam.syllabus?.topics">
+        <strong>{{ topic.name }}:</strong>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!activeExam">
+    <p>No active exam found for this course.</p>
+  </div>
+
+  

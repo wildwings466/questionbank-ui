@@ -1,0 +1,53 @@
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card-deck {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f5f5dc; /* Creamy color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1;
+  max-width: 45%; /* Ensure cards are wider */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #333;
+}
+
+.card-text {
+  color: #555;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00796b; /* Darker shade of sea green */
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}

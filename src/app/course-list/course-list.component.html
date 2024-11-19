@@ -1,0 +1,11 @@
+<div class="course-list-container">
+  <h2>Courses for {{ courseType }}</h2>
+  <div class="card-container">
+    <div class="card" *ngFor="let course of courses" (click)="navigateToExams(course.id)">
+      <h5>{{ course.name }}</h5>
+      <p>{{ course.board }}</p>
+      <!-- Add more fields as necessary -->
+    </div>
+  </div>
+</div>
+

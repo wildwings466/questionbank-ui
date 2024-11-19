@@ -1,0 +1,23 @@
+<div class="container mt-5" *ngIf="course">
+    <h2>{{ course.name }}</h2>
+    <div class="row mt-4">
+      <div class="col-md-8">
+        <h3>Active Exam</h3>
+        <div *ngIf="activeExam">
+          <h4>{{ activeExam.name }} ({{ activeExam.year }})</h4>
+          <p>{{ activeExam.description }}</p>
+          <h5>Syllabus</h5>
+          <p *ngIf="activeExam.syllabus">{{ activeExam.syllabus.content }}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Previous Exam Papers</h3>
+        <ul class="list-group">
+          <li *ngFor="let paper of questionPapers" class="list-group-item">
+            {{ paper.title }} ({{ paper.year }})
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

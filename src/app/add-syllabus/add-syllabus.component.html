@@ -1,0 +1,46 @@
+<div class="container">
+    <h2>Add Syllabus</h2>
+    
+    <form (ngSubmit)="onSubmit()" #syllabusForm="ngForm">
+      
+      <div class="form-group">
+        <label for="content">Syllabus Content:</label>
+        <textarea
+          id="content"
+          name="content"
+          class="form-control"
+          [(ngModel)]="syllabus.content"
+          required
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="exam">Select Exam:</label>
+        <select
+          id="exam"
+          name="exam"
+          class="form-control"
+          [(ngModel)]="syllabus.examId"
+          required
+        >
+          <option *ngFor="let exam of exams" [value]="exam.id">{{ exam.name }}</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="topics">Topics:</label>
+        <textarea
+          id="topics"
+          name="topics"
+          class="form-control"
+          [(ngModel)]="syllabus.topics"
+          placeholder="Enter topics as comma-separated values"
+          required
+        ></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Save Syllabus</button>
+      <button type="button" class="btn btn-secondary" (click)="onSubmit()">Complete</button>
+    </form>
+  </div>
+  

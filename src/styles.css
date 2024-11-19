@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: radial-gradient(circle,   #6dd2c1 0%, #08d5bd 100%);  /* Very light sea green */
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .background-color {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #00796b; /* Darker shade of sea green */
+  }
+
+  
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+  }
+  
+  app-header, app-footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+  }
+  
+  app-header {
+    top: 0;
+    height: 30px; /* Adjust as necessary */
+    background-color: #f8f9fa; /* Example color */
+  }
+  
+  app-footer {
+    bottom: 0;
+    height: 60px; /* Adjust as necessary */
+    background-color: #f8f9fa; /* Example color */
+  }
+  
+  
+  .content {
+    padding-top: 60px; /* Same as header height */
+    padding-bottom: 40px; /* Same as footer height */
+    min-height: calc(100vh - 100px); /* Adjust based on header and footer heights */
+    overflow-y: auto;
+  }
+
+  .content-wrapper {
+    min-height: calc(100vh - 120px); /* Adjust according to the header and footer height */
+    margin-bottom: 60px; /* Footer height */
+    padding-bottom: 20px;
+  }
+  
+  .footer {
+    background-color: #f5f5dc; /* Creamy color */
+    padding: 0px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  

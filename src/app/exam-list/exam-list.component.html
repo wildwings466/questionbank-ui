@@ -1,7 +1,7 @@
 <div class="exam-list-container">
     <h2>Exams for Course ID: {{ courseId }}</h2>
     <div class="card-container">
-      <div class="card" *ngFor="let exam of exams">
+      <div class="card" *ngFor="let exam of exams" (click)="navigateToSyllabus(exam)">
         <h3>{{ exam.name }}</h3>
         <!-- Add more exam details as necessary -->
       </div>
@@ -12,7 +12,7 @@
     <h2>{{ activeExam.name }} - Syllabus</h2>
     <p><strong>Syllabus:</strong></p>
     <ul>
-      <li *ngFor="let topic of activeExam.syllabus?.topics">
+      <li *ngFor="let topic of activeExam.syllabus?.subjects">
         <strong>{{ topic.name }}:</strong>
       </li>
     </ul>

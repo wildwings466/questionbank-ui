@@ -1,0 +1,11 @@
+<div *ngIf="syllabus">
+    <h3>{{ syllabus.name }}</h3>
+    <ul>
+      <li *ngFor="let topic of syllabus.subjects">
+        {{ topic.name }}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!syllabus">
+    <p>Loading syllabus for exam: {{examName}}...</p>
+  </div>

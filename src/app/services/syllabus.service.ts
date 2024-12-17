@@ -16,8 +16,8 @@ export class SyllabusService {
     return this.http.post<Syllabus>(`${this.baseUrl}`, syllabus);
   }
 
-  getSyllabusByExamId(examId: number): Observable<Syllabus[]> {
-    return this.http.get<Syllabus[]>(`${this.baseUrl}/exam/${examId}`);
+  getSyllabusByExamName(examName: string): Observable<Syllabus> {
+    return this.http.get<Syllabus>(`${this.baseUrl}/exam/${examName}`);
   }
 
   getSyllabusById(id: number): Observable<Syllabus> {

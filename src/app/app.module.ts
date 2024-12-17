@@ -19,6 +19,7 @@ import { ContentComponent } from './content/content.component';
 import { AddExamComponent } from './add-exam/add-exam.component';
 import { CourseDetailsComponent } from './course-details/course-details.component';
 import { AddSyllabusComponent } from './add-syllabus/add-syllabus.component';
+import { SyllabusComponent } from './syllabus/syllabus.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -41,7 +42,8 @@ const routes: Routes = [
     ContentComponent,
     AddExamComponent,
     CourseDetailsComponent,
-    AddSyllabusComponent
+    AddSyllabusComponent,
+    SyllabusComponent
   ],
   imports: [
     BrowserModule,

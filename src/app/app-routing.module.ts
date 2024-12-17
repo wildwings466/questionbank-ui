@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { AddExamComponent } from './add-exam/add-exam.component';
 import { AddSyllabusComponent } from './add-syllabus/add-syllabus.component';
 import { SyllabusComponent } from './syllabus/syllabus.component';
+import { AddSubjectComponent } from './add-subject/add-subject.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'exams/:courseId', component: ExamListComponent },
   { path: 'add-syllabus', component: AddSyllabusComponent },
   { path: 'syllabus/:examName', component: SyllabusComponent },
+  { path: 'add-subject', component: AddSubjectComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' } // Redirect to /home by default
 ];
 

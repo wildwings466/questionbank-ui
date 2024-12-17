@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="card shadow">
+      <div class="card-header custom-header text-white">
+        <h2 class="mb-0" style="color: #ffffff;">Add Subject</h2>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="onSave()" #courseForm="ngForm" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="name">Subject Name</label>
+            <input type="text" id="name" required [(ngModel)]="course.name" name="name" class="form-control" placeholder="Enter Subject name">
+            <div class="invalid-feedback">Subject name is required.</div>
+          </div>
+          <div class="form-group">
+            <label for="board">Syllabus</label>
+            <input type="text" id="board" required [(ngModel)]="course.board" name="board" class="form-control" placeholder="Enter Syllabus name">
+            <div class="invalid-feedback">Syllabus is required.</div>
+          </div>
+          <button type="submit" class="btn custom-primary btn-block">Save</button>
+          <button type="button" (click)="onComplete()" class="btn custom-primary btn-block mt-2">Complete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
